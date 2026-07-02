@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moujib Boughdiri — AI &amp; Robotics Engineer</title>
+<meta name="description" content="Portfolio of Moujib Boughdiri — Engineering student specializing in Generative AI, LLM/RAG systems, Robotics and Cybersecurity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Circuit background canvas -->
+<canvas id="circuit-bg"></canvas>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Moujib Boughdiri</a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about" data-nav>About</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <a href="assets/CV.pdf" download class="btn btn-ghost nav-cv">Download CV</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">// Tunis, Tunisia · 2nd-year Engineering Student</p>
+      <h1 class="hero-name">Moujib Boughdiri</h1>
+      <div class="hero-role">
+        <span class="prompt-char">&gt;</span>
+        <span id="typed-role"></span><span class="cursor">_</span>
+      </div>
+      <p class="hero-tagline">I build intelligent systems that connect silicon to the cloud — from embedded robots to multi-agent AI pipelines. Engineering, to me, is turning imagination into working systems.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">AI &amp; Robotics Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3<sup>rd</sup></span>
+          <span class="stat-label">IEEE RAS TSYP VTS Challenge</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Certifications Earned</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-frame">
+        <img src="assets/photo.png" alt="Moujib Boughdiri" class="hero-photo">
+      </div>
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <span class="node node-1"></span>
+      <span class="node node-2"></span>
+      <span class="node node-3"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="section-eyebrow">About</p>
+  <h2 class="section-title">From idea to intelligent system</h2>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>I'm a second-year Industrial Computer Engineering student at <strong>ENET'Com</strong> (École Nationale d'Électronique et des Télécommunications de Sfax), working at the intersection of software engineering, embedded systems, artificial intelligence and automation.</p>
+      <p>Engineering, for me, is more than a profession — it's the process of creating solutions that never existed before. Every project is a chance to learn, innovate and push my technical limits, whether that means wiring a sensor to a microcontroller or orchestrating a multi-agent RAG pipeline.</p>
+      <p>My long-term ambition is to build my own technology company focused on <strong>AI, Robotics and Intelligent Automation</strong> — designing products that combine AI, embedded systems and cloud technologies to solve real industrial and societal challenges. I don't just want to use technology. I want to create it.</p>
+    </div>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <span class="card-tag">Vision</span>
+        <p>Design products that fuse AI, embedded systems and cloud technology to solve industrial and societal challenges — creating technology, not just using it.</p>
+      </div>
+      <div class="about-card">
+        <span class="card-tag">Philosophy</span>
+        <p>Taking an idea from concept to reality — designing hardware, writing software, integrating AI models, and building complete systems from scratch.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-year">2024 – 2027</span>
+      <div class="timeline-body">
+        <h3>ENET'Com</h3>
+        <p>Engineering Degree — Industrial Computer Engineering (2nd year)</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2022 – 2024</span>
+      <div class="timeline-body">
+        <h3>IPEIB</h3>
+        <p>Preparatory Classes — MP (Mathematics &amp; Physics)</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-year">2021 – 2022</span>
+      <div class="timeline-body">
+        <h3>Lycée Mahmoud Messadi, Tunis</h3>
+        <p>Baccalauréat — Mathematics</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
+  <p class="section-eyebrow">Skills</p>
+  <h2 class="section-title">The toolkit behind every system I build</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3>AI &amp; GenAI</h3>
+      <div class="pill-list">
+        <span class="pill">LangChain</span><span class="pill">LangGraph</span><span class="pill">RAG</span>
+        <span class="pill">FAISS · BM25</span><span class="pill">Prompt Engineering</span>
+        <span class="pill">LoRA Fine-tuning</span><span class="pill">MLflow</span><span class="pill">Ollama</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Computer Vision</h3>
+      <div class="pill-list">
+        <span class="pill">YOLOv8</span><span class="pill">OpenCV</span><span class="pill">Industrial Vision Systems</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <div class="pill-list">
+        <span class="pill">Python</span><span class="pill">C / C++</span><span class="pill">Java</span><span class="pill">HTML / CSS</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Embedded Systems</h3>
+      <div class="pill-list">
+        <span class="pill">STM32</span><span class="pill">ESP32</span><span class="pill">Raspberry Pi</span><span class="pill">Arduino</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>DevOps &amp; Cloud</h3>
+      <div class="pill-list">
+        <span class="pill">Docker</span><span class="pill">FastAPI</span><span class="pill">Git</span><span class="pill">VMware</span><span class="pill">Ubuntu</span><span class="pill">Kali Linux</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3>Cybersecurity</h3>
+      <div class="pill-list">
+        <span class="pill">MITRE ATT&amp;CK</span><span class="pill">NIST</span><span class="pill">CIS</span><span class="pill">Cloud / IAM Misconfig</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="section-eyebrow">Projects</p>
+  <h2 class="section-title">Selected work</h2>
+
+  <div class="projects-grid">
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-domain">Cybersecurity · Multi-Agent AI</span>
+      </div>
+      <h3>Multi-Agent RAG Platform for Cybersecurity Threat Analysis</h3>
+      <p>Hybrid dense + sparse RAG pipeline (FAISS + BM25) orchestrated via LangGraph, with specialized agents for ingestion, retrieval, relevance scoring and report generation aligned to MITRE ATT&amp;CK, NIST and CIS.</p>
+      <div class="pill-list">
+        <span class="pill">LangGraph</span><span class="pill">FAISS</span><span class="pill">BM25</span><span class="pill">FastAPI</span><span class="pill">Docker</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-domain">LLMOps</span>
+      </div>
+      <h3>LLMOps Pipeline — Monitoring &amp; Continuous Fine-Tuning</h3>
+      <p>Mini LLMOps pipeline tracking latency, hallucination rate and BLEU/ROUGE via MLflow, with prompt versioning, LoRA fine-tuning on LLaMA-3, and automated deployment through Ollama + Docker Compose.</p>
+      <div class="pill-list">
+        <span class="pill">MLflow</span><span class="pill">LoRA</span><span class="pill">LLaMA-3</span><span class="pill">Docker Compose</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-domain">RAG · Conversational AI</span>
+      </div>
+      <h3>Advanced RAG Chatbot for Technical Documentation</h3>
+      <p>Q&amp;A system over internal document corpora (PDF/Word) with semantic chunking, cross-encoder re-ranking, conversational memory, and confidence-scored, sourced answers.</p>
+      <div class="pill-list">
+        <span class="pill">LangChain</span><span class="pill">ChromaDB</span><span class="pill">Ollama (Mistral)</span><span class="pill">Cohere Rerank</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-domain">Computer Vision · Internship</span>
+        <span class="project-badge">Solynteck</span>
+      </div>
+      <h3>Industrial Computer Vision for Workplace Safety</h3>
+      <p>Real-time detection of PPE (helmets, vests), fire, smoke and forklifts on industrial sites, with automated alerting — built during my internship at Solynteck.</p>
+      <div class="pill-list">
+        <span class="pill">YOLOv8</span><span class="pill">OpenCV</span><span class="pill">Real-time Alerts</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-domain">Cloud Security · LLM</span>
+      </div>
+      <h3>AI-Powered Cloud Security Posture Management (CSPM)</h3>
+      <p>Detects Cloud/IAM misconfigurations and auto-generates remediation reports via RAG + LLM, aligned with MITRE ATT&amp;CK, NIST and CIS frameworks, deployed with Docker.</p>
+      <div class="pill-list">
+        <span class="pill">RAG</span><span class="pill">LLM</span><span class="pill">Cloud/IAM</span><span class="pill">Docker</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE / ENGAGEMENT -->
+<section id="experience" class="section section-alt">
+  <p class="section-eyebrow">Experience &amp; Engagement</p>
+  <h2 class="section-title">Robotics, leadership &amp; competitions</h2>
+
+  <div class="exp-grid">
+    <div class="exp-col">
+      <h3 class="exp-col-title">Robotics</h3>
+      <p class="exp-intro">Robotics has been one of my biggest passions — building complete robotic systems from scratch rather than focusing on a single discipline.</p>
+      <div class="pill-list">
+        <span class="pill">Line-following Robots</span><span class="pill">All-terrain Autonomous Robots</span>
+        <span class="pill">Sensor Fusion</span><span class="pill">Embedded Programming</span><span class="pill">AI-based Decision Making</span>
+      </div>
+      <div class="highlight-box">
+        <span class="highlight-tag">🏆 Competition</span>
+        <p><strong>3rd Place</strong> — IEEE RAS TSYP VTS Challenge, as part of a competing team under pressure and tight deadlines.</p>
+      </div>
+    </div>
+
+    <div class="exp-col">
+      <h3 class="exp-col-title">Leadership &amp; Volunteering</h3>
+      <ul class="exp-list">
+        <li>
+          <strong>IEEE ENET'Com Student Branch</strong>
+          <span>Active member contributing to technical and organizational activities.</span>
+        </li>
+        <li>
+          <strong>IEEE Robotics &amp; Automation Society (RAS)</strong> — Webmaster
+          <span>Website development &amp; maintenance, technical support, media team assistance, digital communication.</span>
+        </li>
+        <li>
+          <strong>Radio Orbeats ENET'Com</strong>
+          <span>Video editing, videography and media production for event coverage.</span>
+        </li>
+        <li>
+          <strong>TRSYP 2.0</strong>
+          <span>Media Committee member.</span>
+        </li>
+        <li>
+          <strong>TSYP</strong>
+          <span>Welcome Team organizer (TSYP 13) · Participant (TSYP 14).</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <p class="section-eyebrow">Contact</p>
+  <h2 class="section-title">Let's build something intelligent</h2>
+  <p class="contact-intro">I'm looking for an internship to contribute to applied AI projects. Reach out — I'd love to talk.</p>
+
+  <div class="contact-grid">
+    <button class="contact-item" id="copy-email" type="button">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">moujibboughdirio80@gmail.com</span>
+      <span class="copy-toast" id="copy-toast">Copied!</span>
+    </button>
+    <a class="contact-item" href="tel:+21625144131">
+      <span class="contact-label">Phone</span>
+      <span class="contact-value">+216 25 144 131</span>
+    </a>
+    <a class="contact-item" href="https://www.linkedin.com/in/moujib-boughdiri-05b767363/" target="_blank" rel="noopener">
+      <span class="contact-label">LinkedIn</span>
+      <span class="contact-value">/in/moujib-boughdiri</span>
+    </a>
+    <div class="contact-item contact-item-static">
+      <span class="contact-label">Location</span>
+      <span class="contact-value">Tunis, Tunisia</span>
+    </div>
+  </div>
+
+  <a href="assets/CV.pdf" download class="btn btn-primary btn-lg">Download Full CV</a>
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Moujib Boughdiri · <span id="year"></span></p>
+  <p class="motto">"Engineering is the art of transforming imagination into intelligent solutions."</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
